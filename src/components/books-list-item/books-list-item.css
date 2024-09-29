@@ -1,0 +1,25 @@
+.books-list-item {
+  display: flex;
+  margin: 15px 0;
+}
+.books-list-item .book-cover {
+  flex-shrink: 1;
+  width: 140px;
+  margin-right: 30px;
+}
+.books-list-item .book-cover img {
+  max-width: 100%;
+}
+.image_prt {
+  width: 100px
+}
+.books-list-item .book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: flex-start;
+}
+.books-list-item .book-details .book-title {
+  font-size: 1.2rem;
+}
