@@ -1,5 +1,6 @@
 import React from 'react';
 import './books-list-item.css'
+import { Link } from 'react-router-dom';
 const BooksListItem = ({book}) => {
   const { title, author, price, coverImage } = book;
   return (
@@ -9,7 +10,9 @@ const BooksListItem = ({book}) => {
       </div>
 
       <div className='books-details'>
-        <a href='#' className='book-title'>{title}</a>
+        <Link to='/'>
+          <div className='book-title'>{title}</div>
+        </Link>
         <div className='book-author'>{author}</div>
         <div className='book-price'>${price}</div>
         <button className='btn btn-info add-to-cart'>Add to cart</button>
