@@ -4,11 +4,11 @@ import './shopping-cart-table.css';
 
 const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete}) => {
   const renderRow = (item, idx) => {
-    let { id, name, count, total } = item;
+    let { id, title, count, total } = item;
     return (
       <tr key={id}>
         <td>{idx}</td>
-        <td>{ name }</td>
+        <td>{ title }</td>
         <td>{ count }</td>
         <td>${ total }</td>
         <td>
